@@ -1,0 +1,13 @@
+{
+  "name": "@fireflysemantics/join",
+  "version": "1.0.14",
+  "bugs": {
+    "url": "https://github.com/fireflysemantics/join/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fireflysemantics/join"
+  },
+  "license": "MIT",
+  "author": "Ole Ersoy"
+}

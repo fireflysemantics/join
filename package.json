@@ -6,7 +6,15 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ig": "npm install -g @jsdevtools/version-bump-prompt && npm install -g npm-check-updates && npm install -g npm-install-peers",
+    "i": "",
+    "u": "cd projects/join && ncu -u && npm i && npm-install-peers",
+    "bp": "cd projects/join && bump patch",
+    "t": "cd projects/join && npx jest",
+    "b": "ng build join",
+    "p": "npm run bp && npm run b && cd dist/join/ && npm publish",
+    "d": "typedoc --out doc --exclude **/*.spec.ts ./projects/join/src/lib"    
   },
   "private": true,
   "dependencies": {
@@ -18,21 +26,23 @@
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
     "@angular/router": "~12.0.1",
+    "@briebug/jest-schematic": "^3.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/jest": "12.0.0",
+    "@angular-devkit/build-angular": "~12.0.3",
     "@angular/cli": "~12.0.1",
     "@angular/compiler-cli": "~12.0.1",
     "@types/jasmine": "~3.6.0",
+    "@types/jest": "26.0.23",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.7.0",
-    "karma": "~6.3.0",
-    "karma-chrome-launcher": "~3.1.0",
+    "jest": "27.0.4",
     "karma-coverage": "~2.0.3",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^12.0.0",
     "typescript": "~4.2.3"
   }
 }

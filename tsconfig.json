@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "join": [
+        "dist/join/join",
+        "dist/join"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
